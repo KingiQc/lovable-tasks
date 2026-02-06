@@ -4,14 +4,7 @@ import TaskCard, { Task } from "@/components/TaskCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-const initialTasks: Task[] = [
-  { id: "1", title: "Design homepage wireframe", description: "Create low-fidelity wireframes for the landing page", status: "in_progress", priority: "high", dueDate: "Feb 7" },
-  { id: "2", title: "Set up project repository", status: "done", priority: "medium", dueDate: "Feb 6" },
-  { id: "3", title: "Write API documentation", description: "Document all REST endpoints", status: "todo", priority: "low", dueDate: "Feb 10" },
-  { id: "4", title: "Review pull requests", status: "todo", priority: "medium", dueDate: "Feb 8" },
-  { id: "5", title: "Fix navigation bug", description: "Mobile menu not closing on route change", status: "todo", priority: "high", dueDate: "Feb 9" },
-  { id: "6", title: "Deploy staging build", status: "in_progress", priority: "medium", dueDate: "Feb 7" },
-];
+const initialTasks: Task[] = [];
 
 type Filter = "all" | "todo" | "in_progress" | "done";
 

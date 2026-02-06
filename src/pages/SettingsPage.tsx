@@ -43,8 +43,8 @@ const SettingsPage = () => {
           <h2 className="font-semibold text-foreground">Profile</h2>
         </div>
         <div className="space-y-2 text-muted-foreground">
-          <p>Name: John Doe</p>
-          <p>Email: john@example.com</p>
+          <p>Name: —</p>
+          <p>Email: —</p>
         </div>
       </div>
 
