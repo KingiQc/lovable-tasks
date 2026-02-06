@@ -1,14 +1,7 @@
 import { useState } from "react";
 import TaskCalendar from "@/components/TaskCalendar";
 
-const taskDates = [
-  new Date(2026, 1, 6),
-  new Date(2026, 1, 7),
-  new Date(2026, 1, 8),
-  new Date(2026, 1, 10),
-  new Date(2026, 1, 14),
-  new Date(2026, 1, 20),
-];
+const taskDates: Date[] = [];
 
 const CalendarPage = () => {
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date());

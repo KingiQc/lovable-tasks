@@ -4,18 +4,13 @@ import TaskCalendar from "@/components/TaskCalendar";
 import TaskCard, { Task } from "@/components/TaskCard";
 import { Button } from "@/components/ui/button";
 
-const sampleTasks: Task[] = [
-  { id: "1", title: "Design homepage wireframe", description: "Create low-fidelity wireframes for the landing page", status: "in_progress", priority: "high", dueDate: "Feb 7" },
-  { id: "2", title: "Set up project repository", status: "done", priority: "medium", dueDate: "Feb 6" },
-  { id: "3", title: "Write API documentation", description: "Document all REST endpoints", status: "todo", priority: "low", dueDate: "Feb 10" },
-  { id: "4", title: "Review pull requests", status: "todo", priority: "medium", dueDate: "Feb 8" },
-];
+const sampleTasks: Task[] = [];
 
 const Dashboard = () => {
   const [tasks, setTasks] = useState<Task[]>(sampleTasks);
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date());
 
-  const taskDates = [new Date(2026, 1, 6), new Date(2026, 1, 7), new Date(2026, 1, 8), new Date(2026, 1, 10)];
+  const taskDates: Date[] = [];
 
   const todoCount = tasks.filter((t) => t.status === "todo").length;
   const inProgressCount = tasks.filter((t) => t.status === "in_progress").length;
